@@ -309,7 +309,6 @@ app.post("/login", async (req, res) => {
 // =========================
 app.get("/weather", async (req, res) => {
   try {
-    // 1) Get Authorization header
     const auth = req.headers.authorization;
 
     if (!auth) {
